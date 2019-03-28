@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://mapsforge.org/renderTheme renderTheme.xsd" version="1" map-background="#000000">
+
+	<rule e="way" k="highway" v="*"> 
+		<rule e="way" k="highway" v="motorway|motorway_link|trunk|trunk_link">
+			<line stroke="#ffffff" stroke-width="2dp" />
+		</rule>
+		<rule e="way" k="highway" v="primary|primary_link">
+			<line stroke="#ffffff" stroke-width="1.5dp" />
+		</rule>
+		<rule e="way" k="highway" v="secondary|secondary_link">
+			<line stroke="#ffffff" stroke-width="1.2dp" />
+		</rule>
+		<rule e="way" k="highway" v="tertiary|tertiary_link">
+			<line stroke="#ffffff" stroke-width="1dp" />
+		</rule>
+		<rule e="way" k="highway" v="cycleway|track">
+			<line stroke="#ffffff" stroke-width="0.5dp" />
+		</rule>
+		<rule e="way" k="highway" v="residential">
+			<line stroke="#ffffff" stroke-width="0.2dp" />
+		</rule>
+		<rule e="way" k="highway" v="*">
+			<line stroke="#ffffff" stroke-width="0.1dp" />
+		</rule>
+	</rule>
+
+	<rule e="node" k="place" v="*">
+		<rule e="node" k="place" v="hamlet" zoom-min="13">
+			<caption k="name" font-style="bold" font-size="12dp" fill="#ffffff" stroke="#000000" stroke-width="2dp" />
+		</rule>
+		<rule e="node" k="place" v="suburb|town|village" zoom-min="12">
+			<caption k="name" font-style="bold" font-size="13dp" fill="#ffffff" stroke="#000000" stroke-width="2dp" />
+		</rule>
+		<rule e="node" k="place" v="island" zoom-min="10">
+			<caption k="name" font-style="bold" font-size="14dp" fill="#ffffff" stroke="#000000" stroke-width="2dp" />
+		</rule>
+		<rule e="node" k="place" v="city" zoom-max="14">
+			<caption k="name" font-style="bold" font-size="15dp" fill="#ffffff" stroke="#000000" stroke-width="2dp" />
+		</rule>
+		<rule e="node" k="place" v="country" zoom-max="6">
+			<caption k="name" font-style="bold" font-size="15dp" fill="#ffffff" stroke="#000000" stroke-width="2dp" />
+		</rule>
+	</rule>
+</rendertheme>
