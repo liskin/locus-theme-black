@@ -2,7 +2,11 @@
 <rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://mapsforge.org/renderTheme renderTheme.xsd" version="1" map-background="#000000">
 
-	<rule e="way" k="highway" v="*"> 
+	<rule e="way" k="*" v="*" closed="yes">
+		<area fill="#000000" />
+	</rule>
+
+	<rule e="way" k="highway" v="*">
 		<rule e="way" k="highway" v="motorway|motorway_link|trunk|trunk_link">
 			<line stroke="#ffffff" stroke-width="2dp" />
 		</rule>
